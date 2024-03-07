@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div id="main">
+        <h2 style="color: white;">calculator</h2>
+        <input type="text" dir="rtl" id="userInput" placeholder="0" readonly/>
+
+        <div id="calc">
+            <div>
+                <button class="upper-btns" name="7" onclick="enterValue(7)">7</button>
+                <button class="upper-btns" name="8" onclick="enterValue(8)">8</button>
+                <button class="upper-btns" name="9" onclick="enterValue(9)">9</button>
+                <button class="upper-btns" id="spl" onclick="delFunc()">DEL</button>
+            </div>
+            <div>
+                <button class="upper-btns" name="4" onclick="enterValue(4)">4</button>
+                <button class="upper-btns" name="5" onclick="enterValue(5)">5</button>
+                <button class="upper-btns" name="6" onclick="enterValue(6)">6</button>
+                <button class="upper-btns" name="+" onclick="enterValue('+')">+</button>
+            </div>
+            <div>
+                <button class="upper-btns" name="1" onclick="enterValue(1)">1</button>
+                <button class="upper-btns" name="2" onclick="enterValue(2)">2</button>
+                <button class="upper-btns" name="3" onclick="enterValue(3)">3</button>
+                <button class="upper-btns" name="-" onclick="enterValue('-')">-</button>
+            </div>
+            <div>
+                <button class="upper-btns" name="." onclick="enterValue('.')">.</button>
+                <button class="upper-btns" name="0" onclick="enterValue(0)">0</button>
+                <button class="upper-btns" name="/" onclick="enterValue('/')">/</button>
+                <button class="upper-btns" name="*" onclick="enterValue('*')">x</button>
+            </div>
+            <div>
+                <button class="lower-btns" id="spl" onclick="reset()">RESET</button>
+                <button class="lower-btns" style="background-color: red; color: white;" onclick="calculate()">=</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
